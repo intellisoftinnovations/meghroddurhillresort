@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Megh Roddur Hill Resort · Sajek Valley, Rangamati</title>
+  <meta name="description"
+    content="Megh Roddur Hill Resort in Sajek Valley, Rangamati, Bangladesh. Send a booking inquiry or call the resort.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700&display=swap">
+  <style>
+    :root {
+      --f950: #142A25;
+      --f800: #24483D;
+      --f650: #376B59;
+      --m100: #F4F7F4;
+      --m200: #E4ECE7;
+      --c500: #8FA9B5;
+      --s100: #EAF2F4;
+      --sun: #D99A55;
+      --ink: #18221E;
+      --ink2: #58645E;
+      --bg: var(--m100);
+      --card: #fff;
+      --ease: cubic-bezier(.2, .7, .2, 1);
+      --sh: 0 20px 60px rgba(13, 34, 27, .16);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    @media (prefers-color-scheme:dark) {
+      :root:not([data-theme=light]) {
+        --bg: #101c18;
+        --card: #17262f;
+        --ink: #EAF2EE;
+        --ink2: #A9B8B1;
+        --m200: #2a3d36;
+        --s100: #162a30
+      }
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-padding-top: 80px;
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 17px/1.7 Manrope, system-ui, sans-serif
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-weight: 400;
+      margin: 0
+    }
+
+    a {
+      color: inherit
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--sun);
+      outline-offset: 3px
+    }
+
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 22px
+    }
+
+    section.s {
+      padding: 64px 0
+    }
+
+    @media(min-width:768px) {
+      .wrap {
+        padding: 0 36px
+      }
+
+      section.s {
+        padding: 96px 0
+      }
+    }
+
+    @media(min-width:1100px) {
+      .wrap {
+        padding: 0 56px
+      }
+
+      section.s {
+        padding: 128px 0
+      }
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--f650)
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.08;
+      margin: 8px 0 18px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 0;
+      font: 600 15px Manrope, sans-serif;
+      text-decoration: none;
+      cursor: pointer;
+      background: var(--f800);
+      color: #fff;
+      transition: transform .2s ease-out, box-shadow .2s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(13, 34, 27, .3);
+      background: var(--f650)
+    }
+
+    .btn.sun {
+      background: var(--sun);
+      color: #18221E
+    }
+
+    .btn.sun:hover {
+      background: #e5ab6a
+    }
+
+    .btn.ghost {
+      background: rgba(255, 255, 255, .16);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, .4)
+    }
+
+    .glass {
+      background: rgba(20, 42, 37, .72);
+      border: 1px solid rgba(255, 255, 255, .28);
+      -webkit-backdrop-filter: blur(16px) saturate(140%);
+      backdrop-filter: blur(16px) saturate(140%);
+      box-shadow: 0 16px 48px rgba(13, 34, 27, .16);
+      color: #fff
+    }
+
+    /* nav */
+    header {
+      position: fixed;
+      top: calc(12px + env(safe-area-inset-top, 0px));
+      left: 12px;
+      right: 12px;
+      z-index: 20;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 8px 8px 22px;
+      transition: background .22s, box-shadow .22s
+    }
+
+    header.solid {
+      background: rgba(20, 42, 37, .92)
+    }
+
+    .logo {
+      font: 400 1.3rem 'DM Serif Display', serif;
+      text-decoration: none
+    }
+
+    nav {
+      display: none;
+      gap: 22px;
+      font-size: 14px;
+      font-weight: 600
+    }
+
+    nav a {
+      text-decoration: none;
+      opacity: .9;
+      padding: 10px 0
+    }
+
+    nav a:hover,
+    nav a[aria-current] {
+      opacity: 1;
+      border-bottom: 2px solid var(--sun)
+    }
+
+    .menu {
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .3);
+      background: transparent;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer
+    }
+
+    #mnav {
+      display: none;
+      position: fixed;
+      top: calc(76px + env(safe-area-inset-top, 0px));
+      left: 12px;
+      right: 12px;
+      z-index: 19;
+      border-radius: 24px;
+      padding: 12px 22px
+    }
+
+    #mnav.open {
+      display: block
+    }
+
+    #mnav a {
+      display: block;
+      padding: 12px 0;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255, 255, 255, .15)
+    }
+
+    @media(min-width:960px) {
+      nav {
+        display: flex
+      }
+
+      .menu {
+        display: none
+      }
+
+      #mnav {
+        display: none !important
+      }
+
+      header {
+        left: 48px;
+        right: 48px
+      }
+    }
+
+    header .btn {
+      min-height: 44px;
+      padding: 0 18px;
+      display: none
+    }
+
+    @media(min-width:960px) {
+      header .btn {
+        display: inline-flex
+      }
+    }
+
+    /* hero */
+    #home {
+      position: relative;
+      min-height: 100svh;
+      color: #fff;
+      overflow: hidden;
+      background: var(--f950);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end
+    }
+
+    .bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity .7s var(--ease)
+    }
+
+    .bg.on {
+      opacity: 1
+    }
+
+    .ov {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(10, 24, 20, .82) 0%, rgba(10, 24, 20, .45) 45%, rgba(10, 24, 20, .15) 100%), linear-gradient(0deg, rgba(10, 24, 20, .75), transparent 55%)
+    }
+
+    .hin {
+      position: relative;
+      display: grid;
+      gap: 28px;
+      padding: 110px 22px 28px;
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto
+    }
+
+    @media(min-width:960px) {
+      .hin {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+        align-items: end;
+        padding: 120px 56px 40px
+      }
+    }
+
+    .copy {
+      transition: opacity .22s, transform .22s
+    }
+
+    .copy.out {
+      opacity: 0;
+      transform: translateY(-12px)
+    }
+
+    .copy>* {
+      animation: rise .65s var(--ease) both
+    }
+
+    .copy>*:nth-child(2) {
+      animation-delay: .08s
+    }
+
+    .copy>*:nth-child(3) {
+      animation-delay: .16s
+    }
+
+    .copy>*:nth-child(4) {
+      animation-delay: .24s
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(18px)
+      }
+    }
+
+    .copy .eyebrow {
+      color: #fff;
+      opacity: .9
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.6rem);
+      line-height: 1.02;
+      margin: 10px 0 14px
+    }
+
+    .copy p {
+      max-width: 44ch;
+      margin: 0 0 22px;
+      font-size: 18px
+    }
+
+    .rail {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 6px 2px 10px;
+      scrollbar-width: none
+    }
+
+    .rail::-webkit-scrollbar {
+      display: none
+    }
+
+    .card {
+      position: relative;
+      flex: 0 0 132px;
+      height: 200px;
+      border-radius: 24px;
+      overflow: hidden;
+      scroll-snap-align: center;
+      opacity: .72;
+      transition: flex-basis .5s var(--ease), opacity .4s, transform .4s
+    }
+
+    .card.on {
+      flex-basis: 176px;
+      opacity: 1;
+      transform: translateY(-6px);
+      outline: 2px solid var(--sun)
+    }
+
+    @media(min-width:960px) {
+      .card {
+        flex-basis: 150px;
+        height: 270px
+      }
+
+      .card.on {
+        flex-basis: 210px;
+        height: 300px
+      }
+
+      .rail {
+        align-items: flex-end
+      }
+    }
+
+    .pick {
+      position: absolute;
+      inset: 0;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: left;
+      font: 600 13px/1.3 Manrope, sans-serif
+    }
+
+    .pick span {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      text-shadow: 0 1px 6px #000
+    }
+
+    .pick::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, .7), transparent 60%)
+    }
+
+    .pv {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .4);
+      background: rgba(20, 42, 37, .6);
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px
+    }
+
+    .ctl {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 6px
+    }
+
+    .ctl button {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px
+    }
+
+    .prog {
+      flex: 1;
+      max-width: 260px;
+      height: 3px;
+      background: rgba(255, 255, 255, .3);
+      border-radius: 3px;
+      overflow: hidden
+    }
+
+    .prog i {
+      display: block;
+      height: 100%;
+      background: var(--sun);
+      transform-origin: left;
+      transition: transform .3s var(--ease)
+    }
+
+    .cnt {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums
+    }
+
+    .ph {
+      position: absolute;
+      left: 22px;
+      top: 84px;
+      z-index: 1;
+      font-size: 12px;
+      background: rgba(0, 0, 0, .45);
+      padding: 3px 10px;
+      border-radius: 99px
+    }
+
+    @media(min-width:960px) {
+      .ph {
+        left: 56px;
+        top: auto;
+        bottom: 10px
+      }
+    }
+
+    /* trust */
+    .trust {
+      background: var(--f950);
+      color: #fff;
+      padding: 18px 0;
+      font-size: 15px
+    }
+
+    .trust .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 32px;
+      justify-content: center
+    }
+
+    /* sections */
+    .two {
+      display: grid;
+      gap: 36px
+    }
+
+    @media(min-width:900px) {
+      .two {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 64px
+      }
+    }
+
+    .pic {
+      border-radius: 28px;
+      aspect-ratio: 4/3;
+      background-size: cover;
+      background-position: center;
+      box-shadow: var(--sh);
+      position: relative;
+      overflow: hidden
+    }
+
+    .pic small {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      background: rgba(0, 0, 0, .5);
+      color: #fff;
+      padding: 2px 10px;
+      border-radius: 99px;
+      font-size: 12px
+    }
+
+    .note {
+      background: var(--s100);
+      border-left: 4px solid var(--c500);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 15px;
+      color: var(--ink2)
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+    }
+
+    .box {
+      background: var(--card);
+      border: 1px solid var(--m200);
+      border-radius: 24px;
+      padding: 26px
+    }
+
+    .box h3 {
+      font-size: 1.4rem;
+      margin-bottom: 6px
+    }
+
+    .alt {
+      background: var(--m200)
+    }
+
+    .gal {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media(min-width:800px) {
+      .gal {
+        grid-template-columns: repeat(6, 1fr)
+      }
+
+      .gal button:nth-child(1) {
+        grid-column: span 3;
+        aspect-ratio: 3/2
+      }
+
+      .gal button:nth-child(2) {
+        grid-column: span 3;
+        aspect-ratio: 3/2
+      }
+
+      .gal button:nth-child(n+3) {
+        grid-column: span 2
+      }
+    }
+
+    .gal button {
+      border: 0;
+      padding: 0;
+      border-radius: 22px;
+      aspect-ratio: 1;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      transition: transform .5s var(--ease)
+    }
+
+    .gal button:hover {
+      transform: scale(1.025)
+    }
+
+    .gal span {
+      position: absolute;
+      left: 12px;
+      bottom: 10px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      text-shadow: 0 1px 6px #000
+    }
+
+    details {
+      background: var(--card);
+      border: 1px solid var(--m200);
+      border-radius: 18px;
+      padding: 4px 22px;
+      margin-bottom: 12px
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 16px 0;
+      font-weight: 700;
+      min-height: 44px
+    }
+
+    details p {
+      margin: 0 0 16px;
+      color: var(--ink2)
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+      background: var(--card);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--sh)
+    }
+
+    @media(min-width:700px) {
+      form {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .full {
+        grid-column: 1/-1
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 48px;
+      border: 1.5px solid #9fb0a8;
+      border-radius: 14px;
+      padding: 10px 14px;
+      font: inherit;
+      background: var(--bg);
+      color: var(--ink)
+    }
+
+    .err {
+      color: #b3261e;
+      font-size: 14px;
+      min-height: 1px;
+      margin-top: 4px
+    }
+
+    @media(prefers-color-scheme:dark) {
+      .err {
+        color: #ff9a90
+      }
+    }
+
+    input[aria-invalid=true],
+    select[aria-invalid=true] {
+      border-color: #b3261e
+    }
+
+    .ok {
+      display: none;
+      background: var(--s100);
+      border-radius: 20px;
+      padding: 24px
+    }
+
+    .ok.show {
+      display: block
+    }
+
+    footer {
+      background: var(--f950);
+      color: #d3e0da;
+      padding: 64px 0 32px
+    }
+
+    footer a {
+      color: #fff
+    }
+
+    footer h2 {
+      color: #fff
+    }
+
+    .fl {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      margin: 18px 0
+    }
+
+    /* lightbox */
+    #lb {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      background: rgba(8, 18, 15, .94);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      padding: 20px
+    }
+
+    #lb.open {
+      display: flex;
+      animation: fd .3s var(--ease)
+    }
+
+    @keyframes fd {
+      from {
+        opacity: 0;
+        transform: scale(.98)
+      }
+    }
+
+    #lbi {
+      width: min(1100px, 94vw);
+      height: min(70vh, 720px);
+      background-size: cover;
+      background-position: center;
+      border-radius: 22px
+    }
+
+    #lb p {
+      color: #fff;
+      margin: 0;
+      text-align: center
+    }
+
+    #lb .row {
+      display: flex;
+      gap: 12px
+    }
+
+    #lb button {
+      min-width: 48px;
+      min-height: 48px;
+      border-radius: 99px;
+      border: 1px solid rgba(255, 255, 255, .4);
+      background: rgba(255, 255, 255, .12);
+      color: #fff;
+      cursor: pointer;
+      font: 600 15px Manrope
+    }
+
+    .rv {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .6s var(--ease), transform .6s var(--ease)
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .rv {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px
+    }
+
+    .skip:focus {
+      left: 12px;
+      top: 12px;
+      z-index: 99;
+      background: #fff;
+      color: #000;
+      padding: 10px
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="glass" id="hd">
+    <a class="logo" href="#home">Megh Roddur</a>
+    <nav aria-label="Main"><a href="#about">About</a><a href="#stay">Stay</a><a href="#experience">Experience</a><a
+        href="#gallery">Gallery</a><a href="#location">Location</a><a href="#faq">FAQ</a></nav>
+    <span style="display:flex;gap:8px;align-items:center"><a class="btn sun" href="#contact">Check
+        availability</a><button class="menu" id="mb" aria-expanded="false" aria-controls="mnav"
+        aria-label="Open menu">☰</button></span>
+  </header>
+  <div id="mnav" class="glass" role="navigation" aria-label="Mobile"><a href="#about">About</a><a
+      href="#stay">Stay</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a><a
+      href="#location">Location</a><a href="#faq">FAQ</a><a href="#contact">Check availability</a></div>
+
+  <main id="main">
+    <section id="home" aria-roledescription="carousel" aria-label="Resort highlights">
+      <div class="bg on" id="b0"></div>
+      <div class="bg" id="b1"></div>
+      <div class="ov"></div>
+      <div class="ph" id="phl">Temporary placeholder artwork – replace with approved resort photographs</div>
+      <div class="hin">
+        <div class="copy" id="copy" aria-live="polite">
+          <div class="eyebrow" id="eb"></div>
+          <h1 id="hl"></h1>
+          <p id="ds"></p><a class="btn sun" id="cta" href="#about"></a>
+        </div>
+        <div>
+          <div class="rail" id="rail" role="group" aria-label="Slides"></div>
+          <div class="ctl">
+            <button class="glass" id="pv" aria-label="Previous slide">←</button>
+            <button class="glass" id="nx" aria-label="Next slide">→</button>
+            <div class="prog" aria-hidden="true"><i id="pg"></i></div>
+            <span class="cnt" id="ct"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="wrap"><span>Valley, Sajek 4590, Rangamati, Bangladesh</span><span>Google rating: 4.7 (137 reviews) –
+          <a href="https://www.google.com/maps/search/Megh+Roddur+Hill+Resort+Sajek" target="_blank" rel="noopener">see
+            live listing</a></span><a href="tel:+8801511670068">+880 1511-670068</a></div>
+    </div>
+
+    <section class="s" id="about">
+      <div class="wrap two">
+        <div class="rv">
+          <div class="eyebrow">About the resort</div>
+          <h2>Find your quiet corner in the hills of Sajek Valley.</h2>
+          <p>Megh Roddur Hill Resort sits in Sajek Valley, Rangamati, a place known for rolling mist, wide ridgelines
+            and slow mornings. Send us your dates and group size and our team will reply with availability and rates.
+          </p>
+          <p class="note">Draft copy: resort management to confirm all wording before publishing.</p>
+        </div>
+        <div class="pic rv" data-i="0" role="img" aria-label="Placeholder view of hills at Sajek">
+          <small>Placeholder</small></div>
+      </div>
+    </section>
+
+    <section class="s alt" id="stay">
+      <div class="wrap">
+        <div class="eyebrow">Stay</div>
+        <h2>Rooms in the hills</h2>
+        <p style="max-width:60ch">Room names, capacities and rates have not been confirmed yet, so none are shown.
+          <strong>Contact us for rates</strong> and availability.</p>
+        <div class="grid rv">
+          <div class="box">
+            <h3>Room details coming soon</h3>
+            <p>Approved room names, photos, capacity and bed types will appear here.</p><a class="btn"
+              href="#contact">Contact us for rates</a>
+          </div>
+          <div class="box">
+            <h3>Amenities (to be verified)</h3>
+            <ul>
+              <li>Private balconies</li>
+              <li>Attached washrooms</li>
+              <li>24-hour front desk</li>
+              <li>Children’s play area</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Check-in &amp; check-out</h3>
+            <p>Check-in 14:00–20:30, check-out by 11:00 (to be confirmed by management).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s" id="experience">
+      <div class="wrap two">
+        <div class="pic rv" data-i="3" role="img" aria-label="Placeholder golden hour over a ridgeline">
+          <small>Placeholder</small></div>
+        <div class="rv">
+          <div class="eyebrow">Experience</div>
+          <h2>Clouds below, quiet around you</h2>
+          <p>Sajek is loved for misty mornings, sunrise light on the ridges and open hill views. Travel times, road
+            conditions and nearby activities will be added once confirmed by the resort.</p>
+          <a class="btn" href="#gallery">See the gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="s alt" id="gallery">
+      <div class="wrap">
+        <div class="eyebrow">Gallery</div>
+        <h2>Views of the hills</h2>
+        <p class="note" style="margin-bottom:22px">These are temporary placeholder illustrations, not photographs of the
+          property. See the instructions in the page source to add approved photos.</p>
+        <div class="gal" id="gal"></div>
+      </div>
+    </section>
+
+    <section class="s" id="location">
+      <div class="wrap two">
+        <div class="rv">
+          <div class="eyebrow">Location &amp; directions</div>
+          <h2>Sajek Valley, Rangamati</h2>
+          <p>Valley, Sajek 4590, Rangamati, Bangladesh.</p>
+          <p><a class="btn" href="https://www.google.com/maps/search/Megh+Roddur+Hill+Resort+Sajek" target="_blank"
+              rel="noopener">Open in Google Maps</a></p>
+          <p class="note">Road access and travel notes will be added after resort confirmation. Please call before you
+            travel.</p>
+        </div>
+        <div class="pic rv" data-i="4" role="img" aria-label="Placeholder wide hill landscape">
+          <small>Placeholder</small></div>
+      </div>
+    </section>
+
+    <section class="s alt" id="faq">
+      <div class="wrap" style="max-width:820px">
+        <div class="eyebrow">FAQ</div>
+        <h2>Good to know</h2>
+        <details>
+          <summary>What are check-in and check-out times?</summary>
+          <p>Supplied details: check-in 14:00–20:30 and check-out by 11:00. Please confirm with the resort when you
+            inquire.</p>
+        </details>
+        <details>
+          <summary>How do I book?</summary>
+          <p>Send an inquiry below or call. An inquiry is not a confirmed reservation until resort staff confirm
+            availability.</p>
+        </details>
+        <details>
+          <summary>What are the rates and payment options?</summary>
+          <p>Contact us for rates. Payment and cancellation policies will be published once approved.</p>
+        </details>
+        <details>
+          <summary>Is the resort suitable for families?</summary>
+          <p>The resort lists a children’s play area (to be verified). Ask the team about family needs.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="s" id="contact">
+      <div class="wrap" style="max-width:900px">
+        <div class="eyebrow">Booking inquiry</div>
+        <h2>Check availability</h2>
+        <p>Tell us your dates. This sends an inquiry only; availability is confirmed by staff.</p>
+        <p><a class="btn" href="tel:+8801511670068">Call +880 1511-670068</a> <a class="btn"
+            href="tel:+8801712547800">+880 1712-547800</a> <a class="btn ghost"
+            style="color:var(--ink);border-color:var(--c500)" href="https://www.facebook.com/meghroddurresort/"
+            target="_blank" rel="noopener">Facebook page</a></p>
+        <form id="f" novalidate>
+          <div><label for="n">Full name</label><input id="n" autocomplete="name" required>
+            <div class="err" id="en"></div>
+          </div>
+          <div><label for="p">Phone number</label><input id="p" type="tel" autocomplete="tel" required>
+            <div class="err" id="ep"></div>
+          </div>
+          <div><label for="a">Arrival date</label><input id="a" type="date" required>
+            <div class="err" id="ea"></div>
+          </div>
+          <div><label for="d">Departure date</label><input id="d" type="date" required>
+            <div class="err" id="ed"></div>
+          </div>
+          <div><label for="g">Number of guests</label><input id="g" type="number" min="1" value="2" required>
+            <div class="err" id="eg"></div>
+          </div>
+          <div><label for="r">Room preference (optional)</label><select id="r">
+              <option>No preference</option>
+            </select></div>
+          <div class="full"><label for="m">Message (optional)</label><textarea id="m" rows="3"></textarea></div>
+          <p class="full" style="margin:0;font-size:14px;color:var(--ink2)">Your details are used only to respond to
+            this inquiry. Do not share card details here.</p>
+          <div class="full"><button class="btn sun" type="submit">Prepare inquiry</button></div>
+        </form>
+        <div class="ok" id="ok" role="status" tabindex="-1">
+          <h3>Inquiry ready</h3>
+          <p>This page has no server yet, so please send it by WhatsApp or call. Availability is confirmed only by
+            resort staff.</p><a class="btn" id="wa" target="_blank" rel="noopener" href="#">Send via WhatsApp</a> <a
+            class="btn ghost" style="color:var(--ink);border-color:var(--c500)" href="tel:+8801511670068">Call
+            instead</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <h2>Megh Roddur Hill Resort</h2>
+      <p>Valley, Sajek 4590, Rangamati, Bangladesh</p>
+      <div class="fl"><a href="tel:+8801511670068">+880 1511-670068</a><a href="tel:+8801712547800">+880
+          1712-547800</a><a href="https://www.facebook.com/meghroddurresort/" target="_blank"
+          rel="noopener">Facebook</a><a href="#contact">Send an inquiry</a></div>
+      <p style="font-size:14px">Privacy: inquiry details are used only to reply. Policies to be published after
+        management approval. © Megh Roddur Hill Resort</p>
+    </div>
+  </footer>
+
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div id="lbi" role="img"></div>
+    <p id="lbc"></p>
+    <div class="row"><button id="lp" aria-label="Previous image">←</button><button id="lx">Close</button><button id="ln"
+        aria-label="Next image">→</button></div>
+  </div>
+
+  <script>
+    /* TO ADD REAL PHOTOS: put an approved image URL or data: URI in each `img` below (hosted pages cannot load other sites’ images, so embed them as data: URIs or re-host them). */
+    const S = [
+      { t: "Megh Roddur Hill Resort", e: "Sajek Valley · Rangamati", d: "The signature view of the property among the hills.", c: "Explore the resort", h: "#about", img: "images/mainlook.jpg", p: ["#2b5a73", "#e9c892", "#1d4a3b", "#2c6a54", "#13362c"] },
+      { t: "Wake Above the Clouds", e: "Sajek landscape", d: "Mist rolling through the Sajek hills at first light.", c: "Discover Sajek", h: "#experience", img: "images/cloude.jpg", p: ["#6f95a8", "#dfe9ec", "#33695a", "#4a8570", "#1e4a3d"] },
+      { t: "A Balcony in the Hills", e: "The stay", d: "Wake to open hill views from a private balcony (to be verified).", c: "Explore the stay", h: "#stay", img: "images/balcony.jpg", p: ["#4c7d92", "#cfe0df", "#2a5c4c", "#3d7660", "#183f33"] },
+      { t: "Golden Hour in Sajek", e: "Sunrise & sunset", d: "Warm light settling over the ridgeline.", c: "Plan your visit", h: "#location", img: "images/goldenday.jpg", p: ["#a45d3c", "#f3b565", "#3a5a45", "#2f5946", "#16352b"] },
+      { t: "The Quiet of the Hills", e: "Around the resort", d: "A wide, calm landscape to slow down in.", c: "Get in touch", h: "#contact", img: "images/quiethill.jpg", p: ["#3a647a", "#b6cdd2", "#27564a", "#366d59", "#143329"] }];
+    function art(i) { const q = S[i].p; const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${q[0]}"/><stop offset="1" stop-color="${q[1]}"/></linearGradient></defs><rect width="1600" height="900" fill="url(#g)"/><circle cx="${1000 + i * 90}" cy="${300 - i * 8}" r="70" fill="#fff" opacity=".55"/><path d="M0 520Q250 380 520 470T1040 440T1600 500V900H0Z" fill="${q[2]}"/><ellipse cx="500" cy="540" rx="620" ry="48" fill="#fff" opacity=".35"/><path d="M0 640Q300 520 640 610T1240 580T1600 640V900H0Z" fill="${q[3]}"/><ellipse cx="1100" cy="650" rx="640" ry="44" fill="#fff" opacity=".3"/><path d="M0 760Q400 690 800 750T1600 730V900H0Z" fill="${q[4]}"/></svg>`; return "url(\"data:image/svg+xml;utf8," + encodeURIComponent(svg) + "\")" }
+    const bgOf = i => S[i].img ? `url("${S[i].img}")` : art(i);
+    const $ = id => document.getElementById(id), n = S.length; let cur = 0, front = 0, lbi = 0;
+    const rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
+    $("rail").innerHTML = S.map((s, i) => `<div class="card"><button class="pick" style="background-image:${bgOf(i).replace(/"/g, "&quot;")}" aria-label="Show slide ${i + 1}: ${s.t}"><span>${s.t}</span></button><button class="pv" aria-label="Preview image: ${s.t}">⤢</button></div>`).join("");
+    $("gal").innerHTML = S.map((s, i) => `<button style="background-image:${bgOf(i).replace(/"/g, "&quot;")}" aria-label="Open image: ${s.t}"><span>${s.t}</span></button>`).join("");
+    document.querySelectorAll(".pic").forEach(el => el.style.backgroundImage = bgOf(+el.dataset.i));
+    const cards = [...document.querySelectorAll(".card")];
+    cards.forEach((c, i) => { c.querySelector(".pick").onclick = () => go(i); c.querySelector(".pv").onclick = () => openLb(i) });
+    [...$("gal").children].forEach((b, i) => b.onclick = () => openLb(i));
+    function go(i, first) {
+      i = (i + n) % n; const apply = () => {
+        const s = S[i]; cur = i; const nb = $("b" + (1 - front)), ob = $("b" + front); nb.style.backgroundImage = bgOf(i); nb.classList.add("on"); ob.classList.remove("on"); front = 1 - front;
+        $("eb").textContent = s.e; $("hl").textContent = s.t; $("ds").textContent = s.d; $("cta").textContent = s.c; $("cta").href = s.h;
+        $("ct").textContent = String(i + 1).padStart(2, "0") + " / " + String(n).padStart(2, "0"); $("pg").style.transform = `scaleX(${(i + 1) / n})`;
+        cards.forEach((c, k) => { c.classList.toggle("on", k === i); c.querySelector(".pick").setAttribute("aria-current", k === i) });
+        const r = $("rail"), c = cards[i]; r.scrollTo({ left: c.offsetLeft - r.offsetLeft - (r.clientWidth - c.offsetWidth) / 2, behavior: rm ? "auto" : "smooth" });
+        const nx = new Image(); nx.src = S[(i + 1) % n].img || ""; const cp = $("copy"); cp.classList.remove("out"); cp.querySelectorAll(":scope>*").forEach(e => { e.style.animation = "none"; e.offsetHeight; e.style.animation = "" })
+      };
+      if (first || rm) { apply(); return } $("copy").classList.add("out"); setTimeout(apply, 220)
+    }
+    $("pv").onclick = () => go(cur - 1); $("nx").onclick = () => go(cur + 1); go(0, true);
+    const h = $("home"); let sx = 0, sy = 0; h.addEventListener("touchstart", e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY }, { passive: true });
+    h.addEventListener("touchend", e => { const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(cur + (dx < 0 ? 1 : -1)) }, { passive: true });
+    /* lightbox */
+    function openLb(i) { lbi = (i + n) % n; $("lbi").style.backgroundImage = bgOf(lbi); $("lbi").setAttribute("aria-label", S[lbi].t + (S[lbi].img ? "" : " (placeholder)")); $("lbc").textContent = S[lbi].t + " – " + (lbi + 1) + " of " + n + (S[lbi].img ? "" : " · temporary placeholder"); $("lb").classList.add("open"); $("lx").focus() }
+    const close = () => $("lb").classList.remove("open");
+    $("lx").onclick = close; $("lp").onclick = () => openLb(lbi - 1); $("ln").onclick = () => openLb(lbi + 1); $("lb").onclick = e => { if (e.target.id === "lb") close() };
+    document.addEventListener("keydown", e => {
+      const t = e.target.tagName; if (e.key === "Escape") { close(); $("mnav").classList.remove("open") }
+      if (/INPUT|TEXTAREA|SELECT/.test(t)) return; const k = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0; if (!k) return; $("lb").classList.contains("open") ? openLb(lbi + k) : go(cur + k)
+    });
+    /* nav */
+    const hd = $("hd"); addEventListener("scroll", () => hd.classList.toggle("solid", scrollY > 40), { passive: true });
+    $("mb").onclick = () => { const o = $("mnav").classList.toggle("open"); $("mb").setAttribute("aria-expanded", o) };
+    $("mnav").onclick = e => { if (e.target.tagName === "A") $("mnav").classList.remove("open") };
+    const links = [...document.querySelectorAll("nav a")];
+    const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id)) }), { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("section[id]").forEach(s => so.observe(s));
+    const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target) } }), { threshold: .12 });
+    document.querySelectorAll(".rv").forEach(e => ro.observe(e));
+    /* form */
+    const today = new Date().toISOString().slice(0, 10); $("a").min = today; $("d").min = today;
+    function fail(id, eid, msg) { $(id).setAttribute("aria-invalid", "true"); $(id).setAttribute("aria-describedby", eid); $(eid).textContent = msg; return 1 }
+    $("f").onsubmit = e => {
+      e.preventDefault(); let bad = 0, first = null;
+      ["n", "p", "a", "d", "g"].forEach(k => { $(k).removeAttribute("aria-invalid"); $("e" + k).textContent = "" });
+      const v = k => $(k).value.trim();
+      if (!v("n")) bad += fail("n", "en", "Please enter your full name.");
+      if (!/^[+()\d\s-]{7,20}$/.test(v("p"))) bad += fail("p", "ep", "Please enter a valid phone number.");
+      if (!v("a")) bad += fail("a", "ea", "Please choose an arrival date.");
+      if (!v("d")) bad += fail("d", "ed", "Please choose a departure date."); else if (v("a") && v("d") <= v("a")) bad += fail("d", "ed", "Departure must be after arrival.");
+      if (!(+v("g") >= 1)) bad += fail("g", "eg", "Guests must be at least 1.");
+      if (bad) { document.querySelector("[aria-invalid=true]").focus(); return }
+      const msg = `Booking inquiry – Megh Roddur Hill Resort\nName: ${v("n")}\nPhone: ${v("p")}\nArrival: ${v("a")}\nDeparture: ${v("d")}\nGuests: ${v("g")}\nRoom: ${$("r").value}\nMessage: ${v("m") || "-"}`;
+      $("wa").href = "https://wa.me/8801511670068?text=" + encodeURIComponent(msg); $("ok").classList.add("show"); $("ok").focus()
+    };
+  </script>
+</body>
+
+</html>
